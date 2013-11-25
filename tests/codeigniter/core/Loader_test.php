@@ -308,21 +308,6 @@ class Loader_test extends CI_TestCase {
 
 		$this->load->file('ci_test_file_not_exists', TRUE);
 	}
-
-	// --------------------------------------------------------------------
-
-	public function test_vars()
-	{
-		$key1 = 'foo';
-		$val1 = 'bar';
-		$key2 = 'boo';
-		$val2 = 'hoo';
-		$this->assertNull($this->load->vars(array($key1 => $val1)));
-		$this->assertNull($this->load->vars($key2, $val2));
-		$this->assertEquals($val1, $this->load->get_var($key1));
-		$this->assertEquals(array($key1 => $val1, $key2 => $val2), $this->load->get_vars());
-	}
-
 	// --------------------------------------------------------------------
 
 	public function test_helper()

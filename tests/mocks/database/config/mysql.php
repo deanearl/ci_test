@@ -6,9 +6,9 @@ return array(
 	'mysql' => array(
 		'dsn' => '',
 		'hostname' => 'localhost',
-		'username' => 'travis',
-		'password' => '',
-		'database' => 'ci_test',
+		'username' => 'wom',
+		'password' => 'wom',
+		'database' => 'deanearl',
 		'dbdriver' => 'mysql'
 	),
 

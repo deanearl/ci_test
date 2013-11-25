@@ -140,18 +140,6 @@ class Input_test extends CI_TestCase {
 
 	// --------------------------------------------------------------------
 
-	public function test_method()
-	{
-		$_SERVER['REQUEST_METHOD'] = 'GET';
-		$this->assertEquals('get', $this->input->method());
-		$this->assertEquals('GET', $this->input->method(TRUE));
-		$_SERVER['REQUEST_METHOD'] = 'POST';
-		$this->assertEquals('post', $this->input->method());
-		$this->assertEquals('POST', $this->input->method(TRUE));
-	}
-
-	// --------------------------------------------------------------------
-
 	public function test_is_ajax_request()
 	{
 		$this->assertFalse($this->input->is_ajax_request());
